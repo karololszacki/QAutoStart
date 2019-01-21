@@ -40,6 +40,9 @@ public:
 	PropertyHash extraProperties() const;
 	QVariant extraProperty(PropertyKey key) const;
 	bool isAutoStartEnabled() const;
+#if defined(Q_OS_UNIX)
+	QString desktopFilePath() const;
+#endif
 
 public slots:
 	void setStartId(QString startId);

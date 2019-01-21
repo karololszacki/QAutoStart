@@ -44,6 +44,11 @@ bool QAutoStart::isAutoStartEnabled() const
 	return d->isAutoStartEnabled();
 }
 
+QString QAutoStart::desktopFilePath() const
+{
+	return d->desktopFilePath();
+}
+
 void QAutoStart::setStartId(QString startId)
 {
 	if (d->startId == startId)
