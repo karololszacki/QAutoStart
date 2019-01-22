@@ -40,7 +40,7 @@ public:
 	PropertyHash extraProperties() const;
 	QVariant extraProperty(PropertyKey key) const;
 	bool isAutoStartEnabled() const;
-#if defined(Q_OS_UNIX)
+#if defined(Q_OS_LINUX)
 	QString desktopFilePath() const;
 #endif
 

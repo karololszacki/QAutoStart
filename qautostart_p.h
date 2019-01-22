@@ -29,7 +29,7 @@ private:
 	void createSettings();
 #elif defined(Q_OS_MACOS)
 	QString launchAgentFilePath() const;
-#elif defined(Q_OS_UNIX)
+#elif defined(Q_OS_LINUX)
 	QString desktopFilePath() const;
 #endif
 };
